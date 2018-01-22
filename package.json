@@ -1,9 +1,11 @@
 {
   "name": "babel-plugin-log-and-return",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Use an @log decorator to log the expression in the next line",
   "main": "dist/index.js",
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "build": "NODE_ENV=production rollup -c",
     "prebuild": "rimraf dist/*",
