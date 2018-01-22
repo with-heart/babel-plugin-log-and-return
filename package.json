@@ -2,18 +2,30 @@
   "name": "babel-plugin-log-and-return",
   "version": "0.0.0",
   "description": "Use an @log decorator to log the expression in the next line",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "jest"
+    "build": "NODE_ENV=production rollup -c",
+    "prebuild": "rimraf dist/*",
+    "dev": "NODE_ENV=development rollup -c -w",
+    "test": "jest",
+    "prepublishOnly": "npm run build"
   },
   "author": "Mark Chandler",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "babel-core": "^6.26.0",
+    "babel-template": "^6.26.0"
+  },
+  "devDependencies": {
     "babel-preset-env": "^1.6.1",
-    "babel-template": "^6.26.0",
     "jest": "^22.1.4",
+    "rimraf": "^2.6.2",
     "recast": "^0.13.0",
+    "rollup": "^0.54.1",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-commonjs": "^8.2.6",
+    "rollup-plugin-node-resolve": "^3.0.2",
+    "rollup-plugin-uglify": "^3.0.0",
     "strip-indent": "^2.0.0"
   }
 }
