@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-log-and-return",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "description": "Use an @log decorator to log the expression in the next line",
   "main": "dist/index.js",
   "scripts": {
@@ -19,8 +19,8 @@
   "devDependencies": {
     "babel-preset-env": "^1.6.1",
     "jest": "^22.1.4",
-    "rimraf": "^2.6.2",
     "recast": "^0.13.0",
+    "rimraf": "^2.6.2",
     "rollup": "^0.54.1",
     "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-commonjs": "^8.2.6",
