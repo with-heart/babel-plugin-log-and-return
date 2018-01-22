@@ -4,8 +4,16 @@
   "description": "Use an @log decorator to log the expression in the next line",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "Mark Chandler",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-template": "^6.26.0",
+    "jest": "^22.1.4",
+    "recast": "^0.13.0",
+    "strip-indent": "^2.0.0"
+  }
 }
