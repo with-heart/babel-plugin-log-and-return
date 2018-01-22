@@ -1,7 +1,5 @@
-import template from 'babel-template'
-
 export default function(babel) {
-  const { types: t } = babel
+  const { types: t, template } = babel
 
   const pathsToLog = []
 
@@ -46,18 +44,18 @@ export default function(babel) {
       },
     },
   }
-}
 
-const insertLogFunction = path => {
-  const name = path.scope.generateUidIdentifier('l')
-  const buildLogFunction = template(
-    `function NAME(x) { console.log(x); return x; }`,
-  )
-  const ast = buildLogFunction({
-    NAME: name,
-  })
-  path.node.body.push(ast)
-  return name
+  function insertLogFunction(path) {
+    const name = path.scope.generateUidIdentifier('l')
+    const buildLogFunction = template(
+      `function NAME(x) { console.log(x); return x; }`,
+    )
+    const ast = buildLogFunction({
+      NAME: name,
+    })
+    path.node.body.push(ast)
+    return name
+  }
 }
 
 const isLog = comment => comment.value.trim() === '@log'

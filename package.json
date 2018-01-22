@@ -3,9 +3,7 @@
   "version": "0.0.3",
   "description": "Use an @log decorator to log the expression in the next line",
   "main": "dist/index.js",
-  "files": [
-    "lib"
-  ],
+  "files": ["lib"],
   "scripts": {
     "build": "NODE_ENV=production rollup -c",
     "prebuild": "rimraf dist/*",
@@ -24,8 +22,7 @@
   "homepage": "https://github.com/lionize/babel-plugin-log-and-return#readme",
   "license": "MIT",
   "dependencies": {
-    "babel-core": "^6.26.0",
-    "babel-template": "^6.26.0"
+    "babel-core": "^6.26.0"
   },
   "devDependencies": {
     "babel-preset-env": "^1.6.1",

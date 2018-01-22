@@ -1,7 +1,6 @@
 import stripIndent from 'strip-indent'
 import * as recast from 'recast'
 import * as babel from 'babel-core'
-import template from 'babel-template'
 import plugin from '.'
 
 test('transpiles @log declarator into logAndReturn calls', () => {
