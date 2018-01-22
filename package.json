@@ -3,6 +3,7 @@
   "version": "0.0.2",
   "description": "Use an @log decorator to log the expression in the next line",
   "main": "dist/index.js",
+  "files": ["lib"],
   "scripts": {
     "build": "NODE_ENV=production rollup -c",
     "prebuild": "rimraf dist/*",
@@ -11,6 +12,14 @@
     "prepublishOnly": "npm run build"
   },
   "author": "Mark Chandler",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lionize/babel-plugin-log-and-return"
+  },
+  "bugs": {
+    "url": "https://github.com/lionize/babel-plugin-log-and-return/issues"
+  },
+  "homepage": "https://github.com/lionize/babel-plugin-log-and-return#readme",
   "license": "MIT",
   "dependencies": {
     "babel-core": "^6.26.0",
