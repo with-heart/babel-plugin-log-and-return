@@ -25,7 +25,7 @@ test('transpiles @log declarator into logAndReturn calls', () => {
 
 function transpile(source) {
   const { code } = babel.transform(source, {
-    parserOpts: { parser: recast.parse, plugins: 'template' },
+    parserOpts: { parser: recast.parse },
     generatorOpts: { generator: recast.print, lineTerminator: '\n' },
     babelrc: false,
     plugins: [plugin],

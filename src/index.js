@@ -6,7 +6,7 @@ export default function(babel) {
   const pathsToLog = []
 
   return {
-    name: 'captains-log',
+    name: 'log-and-return',
     visitor: {
       Program: {
         exit(programPath) {
@@ -19,7 +19,7 @@ export default function(babel) {
           pathsToLog.forEach(path => {
             const logExpression = template(`NAME(EXPRESSION)`)({
               NAME: name,
-              EXPRESSION: path,
+              EXPRESSION: path.node,
             })
 
             if (path.parentPath.type === 'ReturnStatement') {
