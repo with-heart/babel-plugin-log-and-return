@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`transpiles @log declarator into logAndReturn calls 1`] = `
+"_l(a + b);
+_l(hello('world'));
+
+function test() {
+  return _l(a + b + c);
+}
+
+function _l(x) {
+  console.log(x);
+  return x;
+}"
+`;
