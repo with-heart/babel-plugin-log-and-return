@@ -7,8 +7,8 @@
   <a href="https://travis-ci.org/lionize/babel-plugin-log-and-return">
     <img src="https://img.shields.io/travis/lionize/babel-plugin-log-and-return/master.svg?style=flat-square" alt="Build Status">
   </a>
-  <a href="https://github.com/lionize/babel-plugin-log-and-return/releases/tag/v0.0.2">
-    <img src="https://img.shields.io/badge/version-0.0.2-green.svg?style=flat-square" alt="v0.0.2">
+  <a href="https://github.com/lionize/babel-plugin-log-and-return/releases/tag/v0.0.3">
+    <img src="https://img.shields.io/badge/version-0.0.3-green.svg?style=flat-square" alt="v0.0.3">
   </a>
   <a href="./LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square">
